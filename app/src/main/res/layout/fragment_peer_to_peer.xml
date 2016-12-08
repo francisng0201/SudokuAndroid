@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/button_send"
+        android:text="Invite"
+        android:layout_height="wrap_content" />
+
+    <GridView
+
+        android:background="@color/colorBoarder"
+        android:layout_below="@+id/button_send"
+        android:numColumns="9"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:id="@+id/multi_player_grid"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+    </GridView>
+
+    <LinearLayout
+        android:layout_below="@+id/multi_player_grid"
+        android:id="@+id/addNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

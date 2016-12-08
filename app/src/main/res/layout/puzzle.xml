@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/puzzle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lijinguo.myapplication.PuzzleActivity"
+    android:layout_gravity="center">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/buttonCtrl"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+
+    <TextView
+        android:layout_marginLeft="@dimen/smallMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timer: " />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchButton"/>
+
+    <TextView
+        android:layout_marginLeft="@dimen/smallMargin"
+        android:id="@+id/timerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:id="@+id/hints"
+        android:layout_below="@+id/addNumbers"
+        android:layout_marginLeft="@dimen/smallMargin"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/revert"
+        android:layout_below="@+id/hints"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="Revert" />
+
+
+</LinearLayout>
+
+    <GridView
+
+        android:background="@color/colorBoarder"
+        android:layout_below="@+id/buttonCtrl"
+
+        android:numColumns="9"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+
+
+        android:id="@+id/view_root"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+    </GridView>
+
+
+    <LinearLayout
+        android:layout_below="@+id/view_root"
+        android:id="@+id/addNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

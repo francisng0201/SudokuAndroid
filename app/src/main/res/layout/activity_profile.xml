@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_centerInParent="true"
+    tools:context="com.example.lijinguo.myapplication.profileActivity">
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/infoGroup"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/user"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/username"
+        android:gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/score"
+        android:gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:gravity = "center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/text" />
+</LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/infoGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/history">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startNewGame"
+        android:layout_below="@+id/history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start new game" />
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_below="@+id/startNewGame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign out" />
+
+
+</RelativeLayout>
+</ScrollView>
